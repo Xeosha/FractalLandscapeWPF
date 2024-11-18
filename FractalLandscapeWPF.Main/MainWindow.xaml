@@ -1,0 +1,16 @@
+﻿<Window x:Class="FractalLandscapeWPF.Main.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="3D Sierpinski Landscape" Height="600" Width="800">
+    <Grid>
+        <!-- Контейнер для 3D-сцены -->
+        <Viewport3D Name="MainViewport" ClipToBounds="True" />
+
+        <!-- Панель управления -->
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Background="Gray" Opacity="0.8">
+            <Button Name="WireframeMode" Content="Wireframe" Click="WireframeMode_Click" Margin="5" />
+            <Button Name="SolidMode" Content="Solid" Click="SolidMode_Click" Margin="5" />
+            <Button Name="ShadedMode" Content="Shaded" Click="ShadedMode_Click" Margin="5" />
+        </StackPanel>
+    </Grid>
+</Window>
